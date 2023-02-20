@@ -7,6 +7,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 export const MAPBOX_TOKEN =
   "pk.eyJ1IjoiYmFiYnMiLCJhIjoiY2s1b2JoMjZvMGYydzNmbXAxMXp1NWZhZyJ9.LEHmtAFLAij67eF-54FjxA";
 
+// eslint-disable-next-line
 export const Map = forwardRef(
   (
     {
@@ -21,8 +22,6 @@ export const Map = forwardRef(
     },
     ref
   ) => {
-    const [, theme] = useStyletron();
-
     return (
       <>
         <MapGL
